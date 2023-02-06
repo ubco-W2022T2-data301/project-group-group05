@@ -29,7 +29,7 @@ In the future, we may also expand the scope to include data from December 2019 a
 
 ## Team Members
 
-- Person 1: one sentence about you!
+- Bradan Fleming: I need a hug.
 - Person 2: one sentence about you!
 - Person 3: one sentence about you!
 
