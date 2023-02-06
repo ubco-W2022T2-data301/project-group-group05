@@ -4,7 +4,14 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 
 ## Milestones
 
-Details for Milestone are available on Canvas (left sidebar, Course Project).
+- [x] Milestone 1
+	- [x] Add data
+	- [x] Add project vision
+- [ ] Milestone 2
+- [ ] Milestone 3
+- [ ] Milestone 4
+- [ ] Milestone 5
+- [ ] Milestone 6
 
 ## Describe your topic/interest in about 150-200 words
 
