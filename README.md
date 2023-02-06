@@ -1,6 +1,6 @@
-# Group YY - {Short snappy Title of your project}
+# Group 05 - Frustrated Flyers
 
-- Your title can change over time.
+Analyzing COVID-19's impact on commercial airlines and their passengers.
 
 ## Milestones
 
