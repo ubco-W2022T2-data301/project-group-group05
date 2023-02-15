@@ -17,7 +17,7 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 
 Our topic of interest is aviation. More specifically, we are interested in how airlines initially responded to COVID-19, and how that response affected flights from commercial airlines.
 
-Despite their sound engineering and safety protocols, airlines are still at the mercy of nature. Because of this, they deal with plenty of logistical challenges that create turbulence in their operation. The winter storm in December 2022 was an example of such an event. That event made it difficult for many people, including UBC Okanagan students, to see their families. Meanwhile, many of them had nowhere else to stay besides the airport. In the wake of this, we opted to look into flight delays. We chose COVID-19 because there is a wealth of data on it, and it is hard to find open datasets for very recent flight data.
+Despite their sound engineering and safety protocols, airlines are still at the mercy of nature. Because of this, they deal with plenty of logistical challenges that create turbulence in their operation. The winter storm in December 2022 was an example of such an event. That event made it difficult for many people, including UBC Okanagan students, to see their families. Meanwhile, many of them had nowhere else to stay besides the airport. In the wake of this, we opted to look into flight delays. We chose COVID-19 because there is a wealth of data on it, and it is hard to find open datasets for very recent flight data. We also assume it was a challenge to airlines to effectively follow new health procedures while keeping to schedule, which is similar to what we experienced. 
 
 ## Describe your dataset in about 150-200 words
 
@@ -30,7 +30,7 @@ In the future, we may also expand the scope to include data from December 2019 a
 ## Team Members
 
 - Bradan Fleming: I need a hug.
-- Person 2: one sentence about you!
+- Aakash Tirathdas: Need to fix my sleep schedule.
 - Person 3: one sentence about you!
 
 ## Images
