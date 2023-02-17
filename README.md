@@ -33,7 +33,7 @@ In the future, we may also expand the scope to include data from December 2019 a
 
 - Bradan Fleming: I need a hug.
 - Aakash Tirathdas: Need to fix my sleep schedule.
-- Person 3: one sentence about you!
+- Kaiden Merchant: I need a car :(
 
 ## Images
 
