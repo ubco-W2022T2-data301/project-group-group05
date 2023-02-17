@@ -7,7 +7,9 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 - [x] Milestone 1
 	- [x] Add data
 	- [x] Add project vision
-- [ ] Milestone 2
+- [x] Milestone 2
+	- [x] Add analyses
+	- [x] Fill out README
 - [ ] Milestone 3
 - [ ] Milestone 4
 - [ ] Milestone 5
