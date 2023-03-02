@@ -1,1 +1,2 @@
 data/raw/Jan_2020_ontime.csv filter=lfs diff=lfs merge=lfs -text
+*.ipynb merge=nbdev-merge
