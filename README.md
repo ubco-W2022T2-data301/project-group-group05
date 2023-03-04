@@ -19,9 +19,13 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 
 ## Describe your topic/interest in about 150-200 words
 
-Our topic of interest is aviation. More specifically, we are interested in how airlines initially responded to COVID-19, and how that response affected flights from commercial airlines.
+We are interested in how airlines initially responded to COVID-19, how those responses disrupted consumer flights, and how we can use flight and health data to predict flight delays and cancellations during future pandemics.
 
-Despite their sound engineering and safety protocols, airlines are still at the mercy of nature. Because of this, they deal with plenty of logistical challenges that create turbulence in their operation. The winter storm in December 2022 was an example of such an event. That event made it difficult for many people, including UBC Okanagan students, to see their families. Meanwhile, many of them had nowhere else to stay besides the airport. In the wake of this, we opted to look into flight delays. We chose COVID-19 because there is a wealth of data on it, and it is hard to find open datasets for very recent flight data. We also assume it was a challenge to airlines to effectively follow new health procedures while keeping to schedule, which is similar to what we experienced. 
+Despite their sound engineering and safety protocols, airlines are still at the mercy of nature. They contend with various logistical challenges that create turbulence in their operation such as the winter storm in December 2022 that left many UBCO students unable to see their families.
+
+In the wake of this, we are investigating flight delays and cancellations during COVID-19 due to the wealth of data available during that period. By analyzing this data, relating them to specific airlines, and comparing the effects of COVID-19 in different regions, we hope to predict these disruptions.
+
+We are also interested in relating the flight data to notable events in the early timeline of COVID-19, e.g., its first reported fatality, the health emergency declared in the United States, and the second case in Thailand. Spikes in flight delays might relate to such health events, so gaining insight into them might improve our predictions.
 
 ## Describe your dataset in about 150-200 words
 
@@ -29,7 +33,7 @@ Unlike weather issues, which have always been a factor in aviation, an internati
 
 Our dataset contains a list of flights from January 2020 sourced from the US Government. For each flight, it lists the IATA codes for origin and destination airports, the distance of each flight, the tail number of the aircraft, the date of the flights, and other values. Most notably, it also contains both the planned and actual times of departure and arrival times, and it tells us whether the flight was diverted or canceled. This allows us to find information about flight delays without having to futz around with multiple data sources.
 
-In the future, we may also expand the scope to include data from December 2019 and February 2020 to get a more complete view of the initial response to the pandemic.
+If possible, we will incorporate health data and airport location data in the near future.
 
 ## Team Members
 
