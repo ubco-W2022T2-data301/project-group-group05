@@ -50,6 +50,10 @@ If possible, we will incorporate health data and airport location data in the ne
 ## References
 
 - [January Flight Delay Prediction](https://www.kaggle.com/datasets/divyansh22/flight-delay-prediction)
+    - License: [U.S. Government Works](https://www.usa.gov/government-works/)
 - [February Flight Delay Prediction](https://www.kaggle.com/datasets/divyansh22/february-flight-delay-prediction)
+    - License: [U.S. Government Works](https://www.usa.gov/government-works/)
 - [Daily cases and deaths by date reported to WHO](https://covid19.who.int/data)
+    - License: [CC BY-NC-SA 3.0 IGO](https://creativecommons.org/licenses/by-nc-sa/3.0/igo/)
 - [OpenFlights extended airport data](https://openflights.org/data.html)
+    - License: [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/)
