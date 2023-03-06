@@ -52,3 +52,4 @@ If possible, we will incorporate health data and airport location data in the ne
 - [January Flight Delay Prediction](https://www.kaggle.com/datasets/divyansh22/flight-delay-prediction)
 - [February Flight Delay Prediction](https://www.kaggle.com/datasets/divyansh22/february-flight-delay-prediction)
 - [Daily cases and deaths by date reported to WHO](https://covid19.who.int/data)
+- [OpenFlights extended airport data](https://openflights.org/data.html)
