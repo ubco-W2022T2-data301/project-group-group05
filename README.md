@@ -14,7 +14,22 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 	- [x] Complete EDAs
 	- [x] Revise research questions
 - [ ] Milestone 4
+    - [ ] Partial analysis pipelines
+        - [ ] Step-by-step pipeine
+        - [ ] Rewrite with method chaining
+    - [ ] Create `project_functions.py` files
+    - [ ] Conduct analysis
+        - [ ] Import the first 2 months of the COVID-19 timeline
+        - [ ] Create a processed dataset with everything we need
+        - [ ] Create graphs that best highlight flight disruptions
+        - [ ] Relate graphs to data from the WHO and the COVID timeline
+        - [ ] Create a prediction model relating flight disruptions to events
+        - [ ] Visualize this prediction model
+        - [ ] Write a narrative around the data analysis
 - [ ] Milestone 5
+    - [ ] Update the processed dataset for Tableau Dashboard if needed
+    - [ ] Create Tableau Dashboards
+    - [ ] Record a 10 minute video presenting the dashboard
 - [ ] Milestone 6
 
 ## Contract requirements
