@@ -17,6 +17,36 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 - [ ] Milestone 5
 - [ ] Milestone 6
 
+## Contract requirements
+- [ ] Implement project feedback
+    - [ ] Feedback 1
+    - [ ] Feedback 2
+    - [ ] Feedback 3
+    - [ ] Feedback 4
+- [x] Data loading
+- [x] Complex data visualization
+- [ ] Appropriate titles and labels for all plots
+- [ ] At least one key insight per plot
+- [ ] Complex data cleaning, wrangling, processing
+    - [x] Handle missing values
+    - [ ] Update column names
+    - [ ] Remove unnecessary columns
+    - [x] Use groupby objects
+    - [ ] Create aggregate dataframe
+- [x] Complex research questions
+- [ ] Narrative with insightful commentary
+- [ ] Sophisticated Tableau Dashboard
+- [x] Use of functions in wrangling, processing, cleaning
+- [x] 4+ basic operations
+- [ ] 3+ advanced operations
+- [ ] 2+ method chains
+- [x] Use of git branches
+- [ ] Use of GitHub features
+    - [x] Pull requests
+    - [ ] Code reviews
+    - [ ] Issues
+- [ ] Extra flair
+
 ## Describe your topic/interest in about 150-200 words
 
 We are interested in how airlines initially responded to COVID-19, how those responses disrupted consumer flights, and how we can use flight and health data to predict flight delays and cancellations during future pandemics.
