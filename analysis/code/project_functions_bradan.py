@@ -23,7 +23,7 @@ def process_time(df: pd.DataFrame, time_prefix: str):
     df.loc[df['ARR_TIME'].isna(), 'Arrival time'] = np.nan
     return df
 
-def load_and_process(jan: str, feb: str, airports: str):
+def load_and_process(jan: str, feb: str, airports: str, who: str):
     ''' Big gross processing funcion '''
     # Import airports
     airports = (pd.read_csv(airports, header=None)
@@ -55,8 +55,8 @@ def load_and_process(jan: str, feb: str, airports: str):
                             'departure_delay': 'Departure delay'})
               )
 
-    # Merge airports with flights
-    df = (pd.merge(flights, airports, left_on='Origin IATA', right_on='IATA')
+    # Merge airports into flights
+    flights = (pd.merge(flights, airports, left_on='Origin IATA', right_on='IATA')
                 .drop(columns='IATA')
                 .rename(columns={'Country': 'Origin country'})
                 .merge(airports, left_on='Destination IATA', right_on='IATA')
@@ -64,4 +64,17 @@ def load_and_process(jan: str, feb: str, airports: str):
                 .rename(columns={'Country': 'Destination country'})
          )
 
-    return df
+    # Import WHO data
+    who = (pd.read_csv('../data/raw/WHO-COVID-19-global-data.csv')
+       .query('Date_reported < "2020-03-01"')
+       .assign(Country = lambda x: np.where(x.Country_code == 'US', 'United States', x.Country))
+       .query('Country_code == "CA" | Country_code == "US" | Country_code == "CN"')
+       .drop(columns=['Country_code', 'WHO_region'])
+       .rename(columns={'Date_reported': 'Date reported',
+               'New_cases': 'New cases',
+               'Cumulative_cases': 'Cumulative cases',
+               'New_deaths': 'New deaths',
+               'Cumulative_deaths': 'Cumulative deaths'})
+      )
+
+    return flights, who
