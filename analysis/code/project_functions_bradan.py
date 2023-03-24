@@ -23,18 +23,37 @@ def process_time(df: pd.DataFrame, time_prefix: str):
     df.loc[df['ARR_TIME'].isna(), 'Arrival time'] = np.nan
     return df
 
-def load_and_process(jan: str, feb: str, airports: str, who: str):
+def load_who_data(start: str, end: str):
+    return (pd.read_csv('../data/raw/WHO-COVID-19-global-data.csv')
+       .query('Date_reported >= "'+start+'" & Date_reported < "'+end+'"')
+       .assign(Country = lambda x: np.where(x.Country_code == 'MP', 'Northern Mariana Islands', x.Country))
+       .assign(Country = lambda x: np.where(x.Country_code == 'US', 'United States', x.Country))
+       .assign(Country = lambda x: np.where(x.Country_code == 'VI', 'Virgin Islands', x.Country))
+       .assign(Date_reported = lambda x: pd.to_datetime(x.Date_reported, utc=True))
+       .drop(columns=['Country_code', 'WHO_region'])
+       .rename(columns={'Date_reported': 'Date reported',
+               'New_cases': 'New cases',
+               'Cumulative_cases': 'Cumulative cases',
+               'New_deaths': 'New deaths',
+               'Cumulative_deaths': 'Cumulative deaths'})
+       .set_index(['Date reported', 'Country'])
+      )
+
+def load_country_data():
+    return (pd.read_csv(airports, header=None)
+            .rename(columns={3: 'Country', 4: 'IATA'})
+            .drop(columns=[0, 1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13])
+            .assign(IATA = lambda x: np.where(x.IATA == "\\N", np.nan, x.IATA))
+            .dropna(subset='IATA')
+           )
+
+def load_and_process(flights: str, airports: str, who: str):
     ''' Big gross processing funcion '''
     # Import airports
-    airports = (pd.read_csv(airports, header=None)
-                .rename(columns={3: 'Country', 4: 'IATA'})
-                .drop(columns=[0, 1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13])
-                .assign(IATA = lambda x: np.where(x.IATA == "\\N", np.nan, x.IATA))
-                .dropna(subset='IATA')
-               )
+    airports = load_country_data()
 
     # Import flights
-    flights = (pd.concat([process_time(pd.read_csv(jan), '2020-1-'), process_time(pd.read_csv(feb), '2020-2-')])
+    flights = (process_time(pd.read_csv(flights), '2020-2-')
                .assign(departure_delay = lambda x: (x['Departure time'] - x['Departure time (max)']))
                .assign(departure_delay = lambda x: np.where(x.departure_delay < np.timedelta64(0), np.timedelta64(0), x.departure_delay))
                .drop(columns=['Unnamed: 21', 'DAY_OF_MONTH', 'DAY_OF_WEEK','OP_UNIQUE_CARRIER',
@@ -65,16 +84,6 @@ def load_and_process(jan: str, feb: str, airports: str, who: str):
          )
 
     # Import WHO data
-    who = (pd.read_csv('../data/raw/WHO-COVID-19-global-data.csv')
-       .query('Date_reported < "2020-03-01"')
-       .assign(Country = lambda x: np.where(x.Country_code == 'US', 'United States', x.Country))
-       .query('Country_code == "CA" | Country_code == "US" | Country_code == "CN"')
-       .drop(columns=['Country_code', 'WHO_region'])
-       .rename(columns={'Date_reported': 'Date reported',
-               'New_cases': 'New cases',
-               'Cumulative_cases': 'Cumulative cases',
-               'New_deaths': 'New deaths',
-               'Cumulative_deaths': 'Cumulative deaths'})
-      )
+    who = load_who_data('2020-02-01', '2020-03-01')
 
     return flights, who
