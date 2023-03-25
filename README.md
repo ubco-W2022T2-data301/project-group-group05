@@ -1,5 +1,7 @@
 # Group 05 - Frustrated Flyers
 
+![A poorly drawn logo](./images/logo.svg)
+
 Analyzing COVID-19's impact on commercial airlines and their passengers.
 
 ## Milestones
