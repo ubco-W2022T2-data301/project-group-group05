@@ -15,19 +15,12 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 - [x] Milestone 3
 	- [x] Complete EDAs
 	- [x] Revise research questions
-- [ ] Milestone 4
-    - [ ] Partial analysis pipelines
-        - [ ] Step-by-step pipeine
-        - [ ] Rewrite with method chaining
-    - [ ] Create `project_functions.py` files
-    - [ ] Conduct analysis
-        - [ ] Import the first 2 months of the COVID-19 timeline
-        - [ ] Create a processed dataset with everything we need
-        - [ ] Create graphs that best highlight flight disruptions
-        - [ ] Relate graphs to data from the WHO and the COVID timeline
-        - [ ] Create a prediction model relating flight disruptions to events
-        - [ ] Visualize this prediction model
-        - [ ] Write a narrative around the data analysis
+- [x] Milestone 4
+    - [x] Partial analysis pipelines
+        - [x] Step-by-step pipeine
+        - [x] Rewrite with method chaining
+    - [x] Create `project_functions.py` files
+    - [x] Conduct analysis
 - [ ] Milestone 5
     - [ ] Update the processed dataset for Tableau Dashboard if needed
     - [ ] Create Tableau Dashboards
@@ -44,24 +37,24 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 - [x] Complex data visualization
 - [ ] Appropriate titles and labels for all plots
 - [ ] At least one key insight per plot
-- [ ] Complex data cleaning, wrangling, processing
+- [x] Complex data cleaning, wrangling, processing
     - [x] Handle missing values
-    - [ ] Update column names
-    - [ ] Remove unnecessary columns
+    - [x] Update column names
+    - [x] Remove unnecessary columns
     - [x] Use groupby objects
-    - [ ] Create aggregate dataframe
+    - [x] Create aggregate dataframe
 - [x] Complex research questions
-- [ ] Narrative with insightful commentary
+- [x] Narrative with insightful commentary
 - [ ] Sophisticated Tableau Dashboard
 - [x] Use of functions in wrangling, processing, cleaning
 - [x] 4+ basic operations
-- [ ] 3+ advanced operations
-- [ ] 2+ method chains
+- [x] 3+ advanced operations
+- [x] 2+ method chains
 - [x] Use of git branches
 - [ ] Use of GitHub features
     - [x] Pull requests
     - [ ] Code reviews
-    - [ ] Issues
+    - [x] Issues
 - [ ] Extra flair
 
 ## Describe your topic/interest in about 150-200 words
