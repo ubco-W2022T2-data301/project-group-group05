@@ -39,7 +39,8 @@ def load_who_data(start: str, end: str):
        .set_index(['Date reported', 'Country'])
       )
 
-def load_country_data():
+def load_country_data(airports):
+    # Keeping so other people can use this
     return (pd.read_csv(airports, header=None)
             .rename(columns={3: 'Country', 4: 'IATA'})
             .drop(columns=[0, 1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13])
@@ -47,10 +48,18 @@ def load_country_data():
             .dropna(subset='IATA')
            )
 
+def load_airport_data(airports):
+    return (pd.read_csv(airports, header=None)
+            .rename(columns={3: 'Country', 4: 'IATA', 6: 'Latitude', 7: 'Longitude'})
+            .drop(columns=[0, 1, 2, 5, 8, 9, 10, 11, 12, 13])
+            .assign(IATA = lambda x: np.where(x.IATA == "\\N", np.nan, x.IATA))
+            .dropna(subset='IATA')
+           )
+
 def load_and_process(flights: str, airports: str, who: str):
     ''' Big gross processing funcion '''
     # Import airports
-    airports = load_country_data()
+    airports = load_airport_data(airports)
 
     # Import flights
     flights = (process_time(pd.read_csv(flights), '2020-2-')
@@ -78,9 +87,14 @@ def load_and_process(flights: str, airports: str, who: str):
     flights = (pd.merge(flights, airports, left_on='Origin IATA', right_on='IATA')
                 .drop(columns='IATA')
                 .rename(columns={'Country': 'Origin country'})
+                .rename(columns={'Latitude': 'Origin latitude'})
+                .rename(columns={'Longitude': 'Origin longitude'})
                 .merge(airports, left_on='Destination IATA', right_on='IATA')
                 .drop(columns='IATA')
                 .rename(columns={'Country': 'Destination country'})
+                .rename(columns={'Latitude': 'Destination latitude'})
+                .rename(columns={'Longitude': 'Destination longitude'})
+                .assign(International = lambda x: np.where(x['Origin country'] == x['Destination country'], False, True))
          )
 
     # Import WHO data
