@@ -29,14 +29,14 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 
 ## Contract requirements
 - [ ] Implement project feedback
-    - [ ] Feedback 1
+    - [x] Feedback 1
     - [ ] Feedback 2
     - [ ] Feedback 3
     - [ ] Feedback 4
 - [x] Data loading
 - [x] Complex data visualization
-- [ ] Appropriate titles and labels for all plots
-- [ ] At least one key insight per plot
+- [x] Appropriate titles and labels for all plots
+- [x] At least one key insight per plot
 - [x] Complex data cleaning, wrangling, processing
     - [x] Handle missing values
     - [x] Update column names
@@ -51,11 +51,11 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
 - [x] 3+ advanced operations
 - [x] 2+ method chains
 - [x] Use of git branches
-- [ ] Use of GitHub features
+- [x] Use of GitHub features
     - [x] Pull requests
-    - [ ] Code reviews
+    - [x] Code reviews
     - [x] Issues
-- [ ] Extra flair
+- [x] Extra flair (we hope)
 
 ## Describe your topic/interest in about 150-200 words
 
