@@ -3,3 +3,4 @@ data/raw/Feb_2020_ontime.csv filter=lfs diff=lfs merge=lfs -text
 data/raw/WHO-COVID-19-global-data.csv filter=lfs diff=lfs merge=lfs -text
 data/raw/airports-extended.dat filter=lfs diff=lfs merge=lfs -text
 data/processed/Feb_2020_processed.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/Feb_2020_daily.csv filter=lfs diff=lfs merge=lfs -text
