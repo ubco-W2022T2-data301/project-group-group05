@@ -4,6 +4,9 @@
 
 Analyzing COVID-19's impact on commercial airlines and their passengers.
 
+## Presentation
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_aQ1W5y54HM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Milestones
 
 - [x] Milestone 1
