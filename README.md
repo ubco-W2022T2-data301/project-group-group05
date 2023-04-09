@@ -24,17 +24,19 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
         - [x] Rewrite with method chaining
     - [x] Create `project_functions.py` files
     - [x] Conduct analysis
-- [ ] Milestone 5
-    - [ ] Update the processed dataset for Tableau Dashboard if needed
-    - [ ] Create Tableau Dashboards
-    - [ ] Record a 10 minute video presenting the dashboard
+- [x] Milestone 5
+    - [x] Update the processed dataset for Tableau Dashboard if needed
+    - [x] Create Tableau Dashboards
+    - [x] Record a 10 minute video presenting the dashboard
 - [ ] Milestone 6
+    - [ ] Address project feedback
+    - [ ] Write final report
 
 ## Contract requirements
 - [ ] Implement project feedback
     - [x] Feedback 1
-    - [ ] Feedback 2
-    - [ ] Feedback 3
+    - [x] Feedback 2
+    - [x] Feedback 3
     - [ ] Feedback 4
 - [x] Data loading
 - [x] Complex data visualization
@@ -48,7 +50,7 @@ Analyzing COVID-19's impact on commercial airlines and their passengers.
     - [x] Create aggregate dataframe
 - [x] Complex research questions
 - [x] Narrative with insightful commentary
-- [ ] Sophisticated Tableau Dashboard
+- [x] Sophisticated Tableau Dashboard
 - [x] Use of functions in wrangling, processing, cleaning
 - [x] 4+ basic operations
 - [x] 3+ advanced operations
