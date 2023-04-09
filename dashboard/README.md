@@ -1,4 +1,7 @@
 # Dashboard folder
 
-- This folder should contain all the information and files needed for the Tableau Dashboard
-- If you'd like to share your video recording of your Tableau Dashboard, you can link it in this file.
+This folder contains our Tableau dashboards.
+
+## Presentation
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_aQ1W5y54HM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
