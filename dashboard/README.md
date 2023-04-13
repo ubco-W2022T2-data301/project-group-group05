@@ -4,4 +4,4 @@ This folder contains our Tableau dashboards.
 
 ## Presentation
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_aQ1W5y54HM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![DATA 301 Dashboard Presentation](https://i.ytimg.com/vi/_aQ1W5y54HM/maxresdefault.jpg)](https://www.youtube.com/watch?v=_aQ1W5y54HM "DATA 301 Dashboard Presentation")
