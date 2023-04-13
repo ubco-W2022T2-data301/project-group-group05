@@ -31,16 +31,16 @@ Our dashboard presentation is available in the video below.
     - [x] Update the processed dataset for Tableau Dashboard if needed
     - [x] Create Tableau Dashboards
     - [x] Record a 10 minute video presenting the dashboard
-- [ ] Milestone 6
-    - [ ] Address project feedback
-    - [ ] Write final report
+- [x] Milestone 6
+    - [x] Address project feedback
+    - [x] Write final report
 
 ## Contract requirements
-- [ ] Implement project feedback
+- [x] Implement project feedback
     - [x] Feedback 1
     - [x] Feedback 2
     - [x] Feedback 3
-    - [ ] Feedback 4
+    - [ ] ~~Feedback 4~~
 - [x] Data loading
 - [x] Complex data visualization
 - [x] Appropriate titles and labels for all plots
