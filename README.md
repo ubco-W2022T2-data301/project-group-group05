@@ -91,6 +91,8 @@ If possible, we will incorporate health data and airport location data in the ne
 
 ## Images
 
+![Percentage of Departure Delay per Airline Tier](./images/kaiden/jan-2020-delays-airlines-tiered.png)
+
 ![Probability of flight delays during January 2020](./images/aakash/jan-2020-delays-cancellations.png)
 
 ![Cancellations, departures, and COVID score during February 2020](./images/bradan/feb-2020-composite.png)
