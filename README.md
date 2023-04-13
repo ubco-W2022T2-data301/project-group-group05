@@ -85,9 +85,9 @@ If possible, we will incorporate health data and airport location data in the ne
 
 ## Team Members
 
-- Bradan Fleming: I need a hug.
 - Aakash Tirathdas: Need to fix my sleep schedule.
-- Kaiden Merchant: I need a car :(
+- Bradan Fleming: I need a hug.
+- Kaiden Merchant: I need a car. :(
 
 ## Images
 
