@@ -91,9 +91,7 @@ If possible, we will incorporate health data and airport location data in the ne
 
 ## Images
 
-{You should use this area to add a screenshot of an interesting plot, or of your dashboard}
-
-<img src ="images/test.png" width="100px">
+![Cancellations, departures, and COVID score during February 2020](./images/bradan/feb-2020-composite.png)
 
 ## References
 
